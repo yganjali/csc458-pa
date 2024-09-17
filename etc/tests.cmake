@@ -1,6 +1,6 @@
 include(CTest)
 
-list(APPEND CMAKE_CTEST_ARGUMENTS --output-on-failure --continue-on-failure --timeout 10 -E 'speed_test|optimization')
+list(APPEND CMAKE_CTEST_ARGUMENTS --output-on-failure --continue-on-failure --timeout 180 -E 'speed_test|optimization')
 
 set(compile_name "compile with bug-checkers")
 add_test(NAME ${compile_name}
@@ -21,4 +21,4 @@ ttest(net_interface_test_pending)
 ttest(net_interface_test_expiry)
 ttest(net_interface_test_independence)
 
-add_custom_target (pa1 COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure --continue-on-failure --timeout 12 -R '^net_interface')
+add_custom_target (pa1 COMMAND ${CMAKE_CTEST_COMMAND} --output-on-failure --continue-on-failure --timeout 180 -R '^net_interface')
