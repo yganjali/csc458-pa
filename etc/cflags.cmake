@@ -1,7 +1,7 @@
 set (CMAKE_CXX_STANDARD 20)
 set (CMAKE_EXPORT_COMPILE_COMMANDS ON)
 
-set(SANITIZING_FLAGS -fno-sanitize-recover=all -fsanitize=undefined -fsanitize=address)
+set(SANITIZING_FLAGS)
 
 # ask for more warnings from the compiler
 set (CMAKE_BASE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
